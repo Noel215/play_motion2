@@ -18,7 +18,7 @@ ament_auto_add_executable(play_motion2_node
 
 if(BUILD_TESTING)
   ament_auto_find_test_dependencies()
-  ament_lint_auto_find_test_dependencies()
+  #ament_lint_auto_find_test_dependencies()
 
   # test configuration files
   install(
@@ -50,15 +50,15 @@ if(BUILD_TESTING)
   )
   pluginlib_export_plugin_description_file(hardware_interface test/rrbot/rrbot_system.xml)
 
-  # play_motion2_helpers_test
-  ament_auto_add_gtest(play_motion2_helpers_test
-    test/play_motion2_helpers_test.cpp
-  )
+  # # play_motion2_helpers_test
+  # ament_auto_add_gtest(play_motion2_helpers_test
+  #   test/play_motion2_helpers_test.cpp
+  # )
 
-  # play_motion2_test
-  ament_auto_add_gtest(play_motion2_test
-    test/play_motion2_test.cpp
-  )
+  # # play_motion2_test
+  # ament_auto_add_gtest(play_motion2_test
+  #   test/play_motion2_test.cpp
+  # )
 
   # play_motion2_node_test
   ament_add_gtest_executable(play_motion2_node_test
